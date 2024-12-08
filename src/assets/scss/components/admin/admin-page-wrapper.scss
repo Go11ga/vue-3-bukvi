@@ -1,0 +1,18 @@
+.admin-page-wrapper {
+  min-height: 100vh;
+  
+  &__nav {
+    padding: 12px 12px 12px 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__header-slot {
+    margin-left: auto;
+  }
+
+  &__body {
+    padding: 12px 12px 12px 72px;
+  }
+}

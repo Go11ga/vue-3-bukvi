@@ -1,0 +1,98 @@
+.user-nav {
+  padding: 0 !important;
+  height: 60px;
+
+  background-color: $bg;
+  border-bottom: 1px solid $border;
+
+  @media screen and (max-width: 991px) {
+    padding: .5rem 0 !important;
+    height: auto;
+  }
+
+  &__container {
+    height: 100%;
+
+    @media screen and (max-width: 991px) {
+      height: auto;
+    }
+  }
+
+  &__link-wrapper {
+    height: inherit;
+    display: flex;
+    align-items: center;
+
+    padding-right: 24px;
+
+    border-right: 1px solid $border;
+
+    @media screen and (max-width: 991px) {
+      border-right: none;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+
+  &__collapse {
+    height: 100%;
+
+    @media screen and (max-width: 991px) {
+      height: auto;
+    }
+  }
+
+  &__btn {
+    padding: 10px 24px !important;
+
+    border-right: 1px solid $border !important;
+    font-size: 14px !important;
+    text-transform: uppercase;
+
+    transition: all .15s linear !important;
+
+    &:hover {
+      color: $accent !important;
+    }
+
+    &--last {
+      border-right: none !important;
+    }
+
+    @media screen and (max-width: 991px) {
+      display: inline-block !important;
+      padding-left: 0 !important;
+      margin-bottom: 12px !important;
+
+      border-right: none !important;
+    }
+  }
+
+  &__auth {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    margin-left: auto;
+    padding-left: 24px;
+
+    border-left: 1px solid $border;
+
+    @media screen and (max-width: 991px) {
+      height: auto;
+      padding-left: 0;
+      justify-content: flex-end;
+
+      border-left: none;
+    }
+  }
+
+  .router-link-exact-active {
+    color: $accent !important;
+  }
+}

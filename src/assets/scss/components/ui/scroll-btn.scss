@@ -1,0 +1,20 @@
+.scroll-btn {
+  display: flex;
+  justify-content: flex-end;
+  
+	position: fixed;
+  bottom: 24px;
+  right: 20%;
+
+  @media screen and (max-width: 2399px) {
+    right: 10%;
+  }
+
+  @media screen and (max-width: 1799px) {
+    right: 5%;
+  }
+
+  @media screen and (max-width: 1599px) {
+    right: 1%;
+  }
+}

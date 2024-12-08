@@ -1,0 +1,28 @@
+.breadcrumbs {
+  margin: 16px 0;
+
+  &__link {
+    padding: 0 !important;
+    border: none;
+    background-color: transparent;
+    color: $accent;
+    font-size: 1.2rem;
+
+    &:after {
+      margin: 0 4px;
+      display: inline-block;
+      content: "/";
+    }
+
+    &--disabled {
+      color: $black;
+
+      pointer-events: none;
+      cursor: default;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+}

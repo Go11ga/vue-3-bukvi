@@ -1,0 +1,56 @@
+.user-footer {
+  padding: 18px 0;
+  min-height: 150px;
+
+  border-top: 1px solid $border;
+
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 991px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__creds {
+    font-size: 14px;
+
+    @media screen and (max-width: 991px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 6px;
+
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 12px 36px;
+    margin-top: 24px;
+
+    color: $fg-bold;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+
+    border: 1px solid $border;
+
+    transition: color .15s linear;
+
+    &:hover {
+      color: $accent;
+    }
+
+    @media screen and (max-width: 575px) {
+      width: 100%;
+    }
+  }
+}

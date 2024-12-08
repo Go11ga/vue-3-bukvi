@@ -1,0 +1,36 @@
+@import '@/assets/scss/variables.scss';
+
+.error {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    margin-bottom: 12px;
+
+    font-size: 42px;
+    text-align: center;
+    color: $accent;
+  }
+
+  &__link-wrapper {
+    text-align: center;
+  }
+
+  &__link {
+    color: $black !important;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+
+    transition: color .15s linear;
+
+    &:hover {
+      color: $accent !important;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.admin-sidebar {
+  width: 56px;
+  height: 100%;
+  padding-top: 16px;
+  padding-left: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  background-color: $bg-alt;
+  overflow: hidden;
+  box-shadow: $box-shadow;
+
+  transition: width .2s linear;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1200;
+
+  &--active {
+    width: 280px;
+  }
+
+  &__btn {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid $black;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: $black;
+    background-color: transparent;
+
+    transition: color .2s linear, border .2s linear;
+
+    &:hover {
+      color: $red;
+      border: 1px solid $red;
+    }
+
+    &--no-border {
+      border: none;
+
+      &:hover {
+        border: none;
+      }
+    }
+  }
+
+  &__list {
+    padding: 12px 12px 12px 4px;
+    flex: 1 0 auto;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    text-decoration: none;
+    overflow: hidden;
+
+    transition: color .2s linear;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &__link-icon {
+    margin-right: 30px;
+    font-size: 1.5rem;
+  }
+
+  &__link-text {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  &__footer {
+    padding: 16px 0;
+  }
+}
+
+.router-link-exact-active {
+  color: $black !important;
+}

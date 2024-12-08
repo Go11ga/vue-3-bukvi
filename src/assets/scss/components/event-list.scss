@@ -1,0 +1,31 @@
+.event-list {
+	&__btn-wrapper {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__btn {
+    display: inline-block;
+    padding: 12px 36px;
+    margin-top: 24px;
+
+    color: $fg-bold;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+
+    border: 1px solid $border;
+
+    transition: color .15s linear;
+
+    &:hover {
+      color: $accent;
+    }
+
+    @media screen and (max-width: 575px) {
+      width: 100%;
+    }
+  }
+}

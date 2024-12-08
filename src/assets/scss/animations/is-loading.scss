@@ -1,0 +1,38 @@
+.is-loading {
+  // position: relative;
+
+  &:before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    
+    opacity: .4;
+    background: linear-gradient(45deg, #eee 25%, #fff 25%, #fff 50%, #eee 50%, #eee 75%, #fff 75%) 0 0 / 30px 30px repeat;
+    animation: is-loading-animation 2s infinite linear;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+}
+
+@-webkit-keyframes is-loading-animation {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 30px -30px;
+  }
+}
+
+@keyframes is-loading-animation {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 30px -30px;
+  }
+}
